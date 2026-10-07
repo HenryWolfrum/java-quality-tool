@@ -8,4 +8,9 @@ class MainTest {
     void addTwoNumbers() {
         assertEquals(5, Main.add(2, 3));
     }
+
+    @Test
+    void negativeFirstNumberReturnsMinusOne() {
+        assertEquals(-1, Main.add(-2, 3));
+    }
 }
